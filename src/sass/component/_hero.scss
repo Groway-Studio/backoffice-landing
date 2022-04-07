@@ -1,0 +1,98 @@
+@import "./../base/_base.scss";
+
+.heroComponent {
+  width: $container;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0 auto;
+  position: relative;
+  z-index: 100;
+  margin-top: 82px;
+  @include tablet {
+    width: $container-tablet;
+    flex-direction: column;
+    margin-top: 140px;
+  }
+  @include phone {
+    width: $container-phone;
+    flex-direction: column;
+    margin-top: 42px;
+  }
+}
+.contentHero {
+  width: 90%;
+  padding-right: 12%;
+  @include tablet {
+    width: 100%;
+    padding-right: 0%;
+  }
+  @include phone {
+    width: 100%;
+    padding-right: 0%;
+  }
+  h1 {
+    font-weight: bold;
+    color: $neutral-color-1000;
+  }
+  span {
+    font-size: var(--title-h1);
+    color: $neutral-color-1000;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 70px;
+    @include phone {
+      font-size: var(--size-5);
+      top: -20px;
+      position: relative;
+    }
+  }
+  div {
+    display: flex;
+    flex-direction: row;
+  }
+  p {
+    font-style: italic;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    color: #031d44;
+    margin: 24px 0 40px;
+    @include phone {
+      font-size: 18px;
+    }
+    b {
+      font-style: italic;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 36px;
+      color: #084887;
+      @include phone {
+        font-size: 18px;
+      }
+    }
+  }
+}
+.ilusHero {
+  width: 669px;
+  @include tablet {
+    margin-top: 60px;
+  }
+  @include phone {
+    width: 100%;
+    margin-top: 24px;
+  }
+}
+
+.cta-socials {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  img {
+    margin-left: 36px;
+    @include phone {
+      margin-left: 24px;
+    }
+  }
+}

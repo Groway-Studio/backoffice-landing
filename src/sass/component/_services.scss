@@ -1,0 +1,71 @@
+@import "./../base/_base.scss";
+
+
+.servicesComponent {
+    width: $container;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+
+    margin-top: 82px;
+    @include tablet {
+      width: $container-tablet;
+      flex-direction: column;
+      margin-top: 140px;
+    //   position: inherit;
+    }
+    @include phone {
+      width: $container-phone;
+      flex-direction: column;
+      height: 490px;
+    //   position: inherit;
+    }
+  }
+  .contentServices {
+    width: 100%;
+    text-align: center;
+    .row{
+        @include phone {
+            display: flex;
+            flex-direction: column;
+        }
+        .col{
+            @include phone {
+                margin-bottom: 46px;
+            }
+            h2{
+                line-height: 40px;
+                margin: 38px 0;
+                @include phone {
+                    margin: 15px 0 18px; 
+                }
+            }
+            p{
+                @include phone {
+                    font-size: var(--size-2);
+                    line-height: 24px!important;
+                    font-style: italic;
+                    font-weight: 300!important;
+                }
+            }
+        }
+    }
+    @include tablet {
+      width: 100%;
+      padding-right: 0%;
+    }
+    @include phone {
+      width: 100%;
+      padding-right: 0%;
+    }
+    span{
+        font-style: italic;
+    }
+
+}
+
+.calculatorIlus ,.assistanceIlus , .consultancyIlus{
+    width: 294px;
+}
+

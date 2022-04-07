@@ -1,0 +1,85 @@
+@import "./../base/_base.scss";
+
+.footerComponent {
+  background-color: $neutral-color-1000;
+  position: relative;
+  z-index: 1000;
+  section {
+    width: $container;
+    margin: 0 auto;
+    padding: 80px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    @include tablet {
+      width: $container-tablet;
+    }
+    @include phone {
+      width: $container-phone;
+      flex-direction: column;
+      padding: 80px 0 20px;
+    }
+    aside {
+      @include phone {
+        flex-direction: column;
+        margin-bottom: 4rem;
+      }
+    }
+    .logoSection {
+      margin-right: 32px;
+    }
+    .ctaSection {
+      display: flex;
+      flex-direction: column;
+      color: $neutral-color-0;
+      margin-right: 40px;
+      .socials {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 12px;
+      }
+    }
+    .ubication {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      @include tablet {
+        flex-direction: column;
+      }
+      @include phone {
+        flex-direction: column;
+      }
+      article {
+        color: $neutral-color-0;
+        padding-right: 32px;
+        @include phone {
+          margin-bottom: 1rem;
+        }
+        @include tablet {
+          padding-bottom: 16px;
+          padding-right: 0;
+          &:last-child {
+            display: flex;
+            flex-direction: column;
+          }
+        }
+        &:first-child {
+          width: 36%;
+          @include phone {
+            width: 100%;
+            margin-bottom: 1rem;
+          }
+          @include tablet {
+            width: 100%;
+          }
+        }
+
+        strong {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

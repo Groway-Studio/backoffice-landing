@@ -1,0 +1,107 @@
+@import "./base/base";
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --menu-item: #{$size * 2};
+
+  --spacing-1: #{$spacing};
+  --spacing-2: #{$spacing * 2};
+  --spacing-3: #{$spacing * 4};
+  --spacing-4: #{$spacing * 8};
+  --spacing-5: #{$spacing * 10};
+
+  --size-5: #{$size * 6};
+  --size-4: #{$size * 4};
+  --size-3: #{$size * 3};
+  --size-2: #{$size * 2};
+  --size-1: #{$size};
+
+  --title-h1: #{$size * 8-4};
+  --title-h2: #{$size * 4+4};
+  --title-h3: var(--size-3);
+
+  --paragraph-1: var(--size-2);
+}
+
+body {
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+
+h1 {
+  font-size: var(--title-h1);
+  line-height: 70px;
+  @include phone {
+    font-size: var(--size-4);
+    line-height: 42px;
+    font-weight: bold !important;
+    font-weight: 700;
+  }
+}
+h2 {
+  font-size: var(--title-h2);
+  color: $neutral-color-400;
+  @include tablet {
+    font-size: var(--title-h3);
+  }
+  @include phone {
+    font-size: var(--size-3);
+  }
+}
+h3 {
+  font-size: var(--title-h3);
+  color: $neutral-color-400;
+  @include tablet {
+    font-size: var(--size-2);
+  }
+  @include phone {
+    font-size: 13px;
+    font-weight: 500 !important;
+    line-height: 23px !important;
+  }
+}
+
+p {
+  font-size: var(--paragraph-1);
+  font-weight: 300;
+  @include phone {
+    font-size: 10px;
+    font-weight: 400 !important;
+    line-height: 16px !important;
+  }
+}
+
+b {
+  color: $primary-color;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  @include phone {
+    display: flex;
+    flex-direction: column;
+  }
+  .col {
+    flex: 1;
+    margin-left: 33px;
+    margin-right: 33px;
+  }
+}
+
+.mt-4 {
+  margin-top: $size * 12;
+}
+
+.disabled {
+  color: #a6a6a6 !important;
+}
+.italic {
+  font-weight: 500;
+}

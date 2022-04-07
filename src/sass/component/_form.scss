@@ -1,0 +1,73 @@
+@import "./../base/_base.scss";
+
+.formComponent {
+  margin-top: 120px;
+  @include tablet {
+    margin-top: 412px;
+  }
+  @include phone{
+    margin-top:382px;
+  }
+  
+  section {
+    width: $container-form;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @include tablet {
+      width: $container-tablet;
+      flex-direction: column-reverse;
+    }
+    @include phone{
+      width: $container-phone;
+      flex-direction: column-reverse;
+    }
+    .talkto{
+      margin-top: 82px;
+      background: #F9F7F8;
+      border-radius: 10px;
+      padding: 32px 56px 0px;
+      margin-bottom: 56px;
+
+      display: flex;
+      flex-direction: row;
+      
+      aside{
+        width: 45%;
+        text-align: left;
+       .text{
+         position: relative;
+         top: -120px;
+         h2{
+           font-size: var(--size-5);
+           line-height: 50px;
+           margin-bottom: 8px;
+         }
+         p{
+           font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+         }
+        .socials{
+          margin-top: 67px;
+          width: 150px;
+          display: flex;
+          justify-content: space-between;
+        }
+       }
+        &:last-child{
+          width: 55%;
+          padding-left: 65px;
+      
+        }
+      }
+    }
+  }
+}
+
+.ilusContact{
+  position: relative;
+  top: -150px;
+}
