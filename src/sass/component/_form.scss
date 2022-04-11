@@ -5,10 +5,10 @@
   @include tablet {
     margin-top: 412px;
   }
-  @include phone{
-    margin-top:382px;
+  @include phone {
+    margin-top: 100px;
   }
-  
+
   section {
     width: $container-form;
     text-align: center;
@@ -20,54 +20,89 @@
       width: $container-tablet;
       flex-direction: column-reverse;
     }
-    @include phone{
+    @include phone {
       width: $container-phone;
-      flex-direction: column-reverse;
+      flex-direction: column;
     }
-    .talkto{
+    .titleSection{
+      @include phone {
+         display: none;
+      }
+    }
+    h2{
+      @include phone {
+        font-size: 36px!important;
+        line-height: 38px!important;
+     }
+    }
+    .talkto {
       margin-top: 82px;
-      background: #F9F7F8;
+      background: #f9f7f8;
       border-radius: 10px;
       padding: 32px 56px 0px;
       margin-bottom: 56px;
-
       display: flex;
       flex-direction: row;
-      
-      aside{
+
+      @include phone {
+        flex-direction: column;
+        padding: 32px 40px 32px;
+      }
+
+      aside {
         width: 45%;
         text-align: left;
-       .text{
-         position: relative;
-         top: -120px;
-         h2{
-           font-size: var(--size-5);
-           line-height: 50px;
-           margin-bottom: 8px;
-         }
-         p{
-           font-weight: 400;
-            font-size: 14px;
-            line-height: 21px;
-         }
-        .socials{
-          margin-top: 67px;
-          width: 150px;
-          display: flex;
-          justify-content: space-between;
+        @include phone {
+          width: 100%;
+          
         }
-       }
-        &:last-child{
+        .text {
+          position: relative;
+          top: -120px;
+          @include phone {
+           text-align: center;
+          }
+          h2 {
+            font-size: var(--size-6);
+            line-height: 50px;
+            margin-bottom: 8px;
+          }
+          p {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px!important;
+            color: #031D44;
+          }
+          .socials {
+            margin-top: 67px;
+            width: 150px;
+            display: flex;
+            justify-content: space-between;
+            @include phone {
+              display: none;
+            }
+          }
+        }
+        &:last-child {
           width: 55%;
           padding-left: 65px;
-      
+          @include phone{
+            width: 100%;
+            padding-left: 0px;
+            top: -80px;
+            position: relative;
+          }
+          
         }
       }
     }
   }
 }
 
-.ilusContact{
+.ilusContact {
   position: relative;
   top: -150px;
+  @include phone{
+    width: 100%;
+  }
 }

@@ -14,7 +14,8 @@
   --spacing-4: #{$spacing * 8};
   --spacing-5: #{$spacing * 10};
 
-  --size-5: #{$size * 6};
+  --size-6: #{$size * 6};
+  --size-5: #{$size * 5};
   --size-4: #{$size * 4};
   --size-3: #{$size * 3};
   --size-2: #{$size * 2};
@@ -92,6 +93,10 @@ b {
     flex: 1;
     margin-left: 33px;
     margin-right: 33px;
+    @include phone {
+      margin-left: 0px;
+      margin-right: 0px;
+    }
   }
 }
 
@@ -104,4 +109,19 @@ b {
 }
 .italic {
   font-weight: 500;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.box1 {
+  height: 200px;
+  background-color: rebeccapurple;
+}
+
+.box2 {
+  height: 200px;
+  background-color: red;
 }

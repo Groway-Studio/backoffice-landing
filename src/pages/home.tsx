@@ -10,13 +10,16 @@ import Plans from "../component/plans";
 export default function Home() {
   return (
     <React.Fragment>
-      <Header />
-      <Hero />
-      <Services />
-      <Trial />
-       <Plans />
-      <FormContact />
-      <Footer /> 
+      <div className="box">
+        <Header />
+        <Hero />
+        <Services />
+        <Trial />
+        <Plans />
+        <FormContact />
+        <Footer /> 
+     
+      </div>
     </React.Fragment>
   );
 }

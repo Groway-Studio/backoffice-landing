@@ -13,7 +13,7 @@ export default function FormContact() {
     <React.Fragment>
       <div className="formComponent">
         <section className="container">
-          <h2>Lorem Impsum</h2>
+          <h2 className="titleSection">Lorem Impsum</h2>
 
           <article className="talkto">
             <aside>
