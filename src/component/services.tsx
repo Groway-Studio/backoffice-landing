@@ -15,12 +15,12 @@ export default function Hero() {
             <div className="col">
               <img src={calculatorIlus} className="calculatorIlus" alt="" />
               <h2>Gestión contable y tributaria</h2>
-              <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+              <p>Cuenta con un equipo contable a tu disposicion para que puedas enfocarte en lo que mas importa, hacer crecer tu negocio.</p>
             </div>
             <div className="col">
               <img src={assistanceIlus} className="assistanceIlus" alt="" />
               <h2>Asistente <br /> Virtual</h2>
-              <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+              <p>Si la gestion administrativa de tu empresa ocupa el tiempo en el que podrias estar vendiendo tus servicios o productos, te brindamos un asistente virtual listo para atender las tareas de apoyo que necesites.</p>
             </div>
             <div className="col disabled">
               <img src={consultancyIlus} className="consultancyIlus" alt="" />
