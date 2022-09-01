@@ -25,7 +25,7 @@ export default function Hero() {
             <div className="col disabled">
               <img src={consultancyIlus} className="consultancyIlus" alt="" />
               <h2 className="disabled"> <span className="italic">Cooming Soon</span> Asesoría Legal</h2>
-              <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+              <p>Cuenta con asesoria legal cuando la necesites para que puedas respaldar las decisiones de tu negocio.</p>
             </div>
           </div>
         </div>
