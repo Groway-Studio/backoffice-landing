@@ -9,9 +9,9 @@ export default function Hero() {
       <div className={"trialComponent"}>
         <img src={franja} alt="" />
         <div className="contentTrial">
-          <h2>¿Periodo de prueba gratis?</h2>
+          <h2>Pide tu periodo de prueba gratuito ahora?</h2>
           <br />
-          <ButtonComponent label="Solicitar" />
+          <ButtonComponent label="Prueba Groway Backoffice" />
         </div>
       </div>
     </React.Fragment>
