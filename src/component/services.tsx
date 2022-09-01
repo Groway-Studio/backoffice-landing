@@ -15,17 +15,17 @@ export default function Hero() {
             <div className="col">
               <img src={calculatorIlus} className="calculatorIlus" alt="" />
               <h2>Gestión contable y tributaria</h2>
-              <p>Cuenta con un equipo contable a tu disposicion para que puedas enfocarte en lo que mas importa, hacer crecer tu negocio.</p>
+              <p>Cuenta con un equipo contable a tu disposición para que puedas enfocarte en lo que más importa, hacer crecer tu negocio.</p>
             </div>
             <div className="col">
               <img src={assistanceIlus} className="assistanceIlus" alt="" />
               <h2>Asistente <br /> Virtual</h2>
-              <p>Si la gestion administrativa de tu empresa ocupa el tiempo en el que podrias estar vendiendo tus servicios o productos, te brindamos un asistente virtual listo para atender las tareas de apoyo que necesites.</p>
+              <p>Si la gestión administrativa de tu empresa ocupa el tiempo en el que podrías estar vendiendo tus servicios o productos, te brindamos un asistente virtual listo para atender las tareas de apoyo que necesites.</p>
             </div>
             <div className="col disabled">
               <img src={consultancyIlus} className="consultancyIlus" alt="" />
               <h2 className="disabled"> <span className="italic">Cooming Soon</span> Asesoría Legal</h2>
-              <p>Cuenta con asesoria legal cuando la necesites para que puedas respaldar las decisiones de tu negocio.</p>
+              <p>Cuenta con asesoría legal cuando la necesites para que puedas respaldar las decisiones de tu negocio.</p>
             </div>
           </div>
         </div>
