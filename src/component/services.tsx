@@ -24,7 +24,7 @@ export default function Hero() {
             </div>
             <div className="col disabled">
               <img src={consultancyIlus} className="consultancyIlus" alt="" />
-              <h2 className="disabled"> <span className="italic">Cooming Soon</span> Asesoría Legal</h2>
+              <h2 className="disabled"> <span className="italic">Próximamente</span> Asesoría Legal</h2>
               <p>Cuenta con asesoría legal cuando la necesites para que puedas respaldar las decisiones de tu negocio.</p>
             </div>
           </div>
