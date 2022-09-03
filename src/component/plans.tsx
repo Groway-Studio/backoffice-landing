@@ -31,7 +31,7 @@ export default function Plans() {
                             </div>
                             <div className="price">
                                 <h2>S/. 699</h2>
-                                <p>montly</p>
+                                <p>mensual</p>
                             </div>
                         </div>
                     </div>
@@ -57,7 +57,7 @@ export default function Plans() {
                             </div>
                             <div className="price">
                                 <h2>S/. 899</h2>
-                                <p>montly</p>
+                                <p>mensual</p>
                             </div>
                         </div>
                     </div>
