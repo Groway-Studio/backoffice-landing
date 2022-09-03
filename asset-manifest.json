@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.3d968c86.css",
-    "main.js": "/static/js/main.38fc1ce7.js",
+    "main.js": "/static/js/main.10fa472a.js",
     "static/media/ilus-hero.svg": "/static/media/ilus-hero.19ccff2df43026474ec5fc6570b8bebd.svg",
     "static/media/assistance.svg": "/static/media/assistance.fc18d5e06f207f268b9d8f3c7b52065d.svg",
     "static/media/calculator.svg": "/static/media/calculator.230e0d982794033fef9c0402152d1316.svg",
@@ -19,10 +19,10 @@
     "static/media/elipse-white.svg": "/static/media/elipse-white.3a1cc96e9061a9f956d6563b726ca882.svg",
     "static/media/elipse-black.svg": "/static/media/elipse-black.7a8629a7ada4c9648aa5a43de4f4a7e8.svg",
     "main.3d968c86.css.map": "/static/css/main.3d968c86.css.map",
-    "main.38fc1ce7.js.map": "/static/js/main.38fc1ce7.js.map"
+    "main.10fa472a.js.map": "/static/js/main.10fa472a.js.map"
   },
   "entrypoints": [
     "static/css/main.3d968c86.css",
-    "static/js/main.38fc1ce7.js"
+    "static/js/main.10fa472a.js"
   ]
 }
