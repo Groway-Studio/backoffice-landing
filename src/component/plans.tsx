@@ -82,7 +82,7 @@ export default function Plans() {
                                 </div>
                             </div>
                             <div className="price">
-                                <h2>Contactanos</h2>
+                                <h2>Contáctanos</h2>
                                 <p className="none">call us</p>
                             </div>
                         </div>
