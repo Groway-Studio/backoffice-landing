@@ -63,10 +63,6 @@ export default function FormContact() {
                   <Label>Tu mensaje</Label>
                   <TextArea />
                 </FormGroup>
-                <FormGroup>
-                  <Label>¿Cómo nos contactamos contigo?*</Label>
-                  <Input />
-                </FormGroup>
                 <ButtonComponent label="Enviar" />
               </Form>
 
