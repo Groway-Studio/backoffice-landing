@@ -1,9 +1,10 @@
 import React from "react";
 import { Box } from "@material-ui/core";
+import { animateScroll as scroll } from "react-scroll";
+
 import LogoGroway from "./../../assets/logo-groway.png";
-import "./../../sass/shared/_header.scss";
 import headerBg from "./../../assets/blob-header.svg";
-import {  animateScroll as scroll } from "react-scroll";
+import "./../../sass/shared/_header.scss";
 
 class Header extends React.Component {
   scrollToSection = () => {
@@ -12,7 +13,7 @@ class Header extends React.Component {
 
   render() {
     return (
-      <React.Fragment>
+      <>
         <img src={headerBg} className="headerBg" alt="" />
         <Box
           className="navMenu"
@@ -23,11 +24,10 @@ class Header extends React.Component {
           }}
         >
           <img src={LogoGroway} alt="logo" />
-          
         </Box>
-      </React.Fragment>
+      </>
     );
   }
 }
 
-export default Header
+export default Header;

@@ -1,52 +1,63 @@
 @import "./../base/_base.scss";
 
 .formComponent {
+  @include width;
   margin-top: 120px;
+
   @include tablet {
-    margin-top: 412px;
   }
   @include phone {
-    margin-top: 100px;
+    margin-top: 250px;
   }
 
   section {
-    width: $container-form;
+    max-width: $container-form;
     text-align: center;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     @include tablet {
-      width: $container-tablet;
+      max-width: $container-tablet;
       flex-direction: column-reverse;
     }
     @include phone {
-      width: $container-phone;
+      max-width: $container-phone;
       flex-direction: column;
     }
-    .titleSection{
+    .titleSection {
       @include phone {
-         display: none;
+        display: none;
+      }
+
+      @include tablet {
+        display: none;
       }
     }
-    h2{
+    h2 {
       @include phone {
-        font-size: 36px!important;
-        line-height: 38px!important;
-     }
+        font-size: 36px !important;
+        line-height: 38px !important;
+      }
     }
     .talkto {
       margin-top: 82px;
       background: #f9f7f8;
       border-radius: 10px;
-      padding: 32px 56px 0px;
+      padding: 32px 56px;
       margin-bottom: 56px;
       display: flex;
       flex-direction: row;
+      position: relative;
 
       @include phone {
         flex-direction: column;
         padding: 32px 40px 32px;
+        gap: 1rem;
+      }
+
+      @include tablet {
+        margin-top: 1.5rem;
       }
 
       aside {
@@ -54,24 +65,35 @@
         text-align: left;
         @include phone {
           width: 100%;
-          
         }
+
         .text {
           position: relative;
-          top: -120px;
+          top: 160px;
+
           @include phone {
-           text-align: center;
+            text-align: center;
+            top: 0;
           }
           h2 {
             font-size: var(--size-6);
             line-height: 50px;
             margin-bottom: 8px;
+
+            @include tablet {
+              font-size: var(--size-4);
+              line-height: 2rem;
+            }
           }
           p {
             font-weight: 400;
             font-size: 14px;
-            line-height: 21px!important;
-            color: #031D44;
+            line-height: 21px !important;
+            color: #031d44;
+
+            @include phone {
+              text-align: left;
+            }
           }
           .socials {
             margin-top: 67px;
@@ -86,13 +108,12 @@
         &:last-child {
           width: 55%;
           padding-left: 65px;
-          @include phone{
+
+          @include phone {
             width: 100%;
             padding-left: 0px;
             top: -80px;
-            position: relative;
           }
-          
         }
       }
     }
@@ -100,9 +121,17 @@
 }
 
 .ilusContact {
-  position: relative;
+  position: absolute;
   top: -150px;
-  @include phone{
-    width: 100%;
+
+  @include phone {
+    top: -45%;
+    left: 0;
+  }
+
+  @include tablet {
+    width: 40%;
+    top: -5rem;
+    left: 2rem;
   }
 }

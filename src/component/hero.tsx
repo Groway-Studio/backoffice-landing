@@ -1,19 +1,18 @@
-import * as React from "react";
-import "./../sass/component/_hero.scss";
-
 import ilusHero from "./../assets/ilus-hero.svg";
-
+import "./../sass/component/_hero.scss";
 
 export default function Hero() {
   return (
-    <React.Fragment>
-      <div className={"heroComponent"}>
-        <div className="contentHero">
-          <div><h1>Groway</h1></div>
-          <div><span>BackOffice</span></div>
+    <div className={"heroComponent"}>
+      <div className="contentHero">
+        <div>
+          <h1>Groway</h1>
         </div>
-        <img src={ilusHero} className="ilusHero" alt="" />
+        <div>
+          <span>BackOffice</span>
+        </div>
       </div>
-    </React.Fragment>
+      <img src={ilusHero} className="ilusHero" alt="" />
+    </div>
   );
 }

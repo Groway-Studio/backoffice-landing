@@ -1,28 +1,28 @@
 @import "./../base/_base.scss";
 
-.trialComponent{
-    margin-top: 72px;
-    width: 100%; 
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    align-items: center;
-    justify-content: center;
+.trialComponent {
+  margin-top: 72px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  justify-content: center;
 
-    img{
-        width: 100%;
-        background-size: cover;
-        @include phone{
-            
-            object-fit: fill;
-        }
+  img {
+    width: 100%;
+    background-size: cover;
+    @include phone {
+      object-fit: fill;
     }
-    .contentTrial{
-        z-index: 1000;
-        position: absolute;
-        text-align: center;
-        margin: 0 auto;
+  }
+  .contentTrial {
+    @include width;
+    z-index: 1000;
+    position: absolute;
+    text-align: center;
 
-    
+    @include phone {
+      max-width: $container-phone;
     }
+  }
 }

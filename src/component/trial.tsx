@@ -1,19 +1,17 @@
-import * as React from "react";
-import "./../sass/component/_trial.scss";
-import franja from "./../assets/franja-3.svg";
-import ButtonComponent from "./shared/button";
+import { ButtonComponent } from "./shared";
 
-export default function Hero() {
+import franja from "./../assets/franja-3.svg";
+import "./../sass/component/_trial.scss";
+
+export default function Trial() {
   return (
-    <React.Fragment>
-      <div className={"trialComponent"}>
-        <img src={franja} alt="" />
-        <div className="contentTrial">
-          <h2>Pide tu periodo de prueba gratuito ahora</h2>
-          <br />
-          <ButtonComponent label="Prueba Groway Backoffice" />
-        </div>
+    <div className={"trialComponent"}>
+      <img src={franja} alt="" />
+      <div className="contentTrial">
+        <h2>Pide tu periodo de prueba gratuito ahora</h2>
+        <br />
+        <ButtonComponent label="Prueba Groway Backoffice" />
       </div>
-    </React.Fragment>
+    </div>
   );
 }

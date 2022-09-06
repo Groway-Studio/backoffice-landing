@@ -70,7 +70,7 @@ p {
   font-size: var(--paragraph-1);
   font-weight: 300;
   @include phone {
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 400 !important;
     line-height: 16px !important;
   }

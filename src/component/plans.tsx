@@ -1,94 +1,123 @@
-import * as React from "react";
-import "./../sass/component/_plans.scss";
 import elipseBlack from "./../assets/elipse-black.svg";
 import elipseWhite from "./../assets/elipse-white.svg";
+import "./../sass/component/_plans.scss";
 
 export default function Plans() {
-    return (
-        <React.Fragment>
-            <div className={"plansComponent"}>
-                <h2>Planes</h2>
-                <span>Lorem ipsum tus mejores ideas</span>
+  return (
+    <div className={"plansComponent"}>
+      <h2>Planes</h2>
+      <span>Lorem ipsum tus mejores ideas</span>
 
-                <div className="row pricing">
-                    <div className="col">
-                        <div className="card">
-                            <h2>Basic</h2>
-                            <p>Ideal para independientes o startups en plena incubación.</p>
-                            <div className="list">
-                                <div className="item">
-                                    <span> <img src={elipseBlack} alt="yes" /> </span> <span>Lorem ipsum tus</span>
-                                </div>
-                                <div className="item">
-                                    <span> <img src={elipseBlack} alt="yes" /> </span> <span>Lorem ipsum tus</span>
-                                </div>
-                                <div className="item">
-                                    <span> <img src={elipseWhite} alt="no" /> </span> <span>Lorem ipsum tus</span>
-                                </div>
-                                <div className="item">
-                                    <span> <img src={elipseWhite} alt="no" /> </span> <span>Lorem ipsum tus</span>
-                                </div>
-                            </div>
-                            <div className="price">
-                                <h2>S/. 699</h2>
-                                <p>mensual</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col">
-                        <div className="card">
-                            <h2>Pro</h2>
-                            <p>
-                                Ideal para startups que ya están realizando sus primeras ventas.
-                            </p>
-                            <div className="list">
-                                <div className="item">
-                                    <span> <img src={elipseBlack} alt="yes" /> </span> <span>Lorem ipsum tus</span>
-                                </div>
-                                <div className="item">
-                                    <span> <img src={elipseBlack} alt="yes" /> </span> <span>Lorem ipsum tus</span>
-                                </div>
-                                <div className="item">
-                                    <span> <img src={elipseBlack} alt="yes" /> </span> <span>Lorem ipsum tus</span>
-                                </div>
-                                <div className="item">
-                                    <span> <img src={elipseWhite} alt="no" /> </span> <span>Lorem ipsum tus</span>
-                                </div>
-                            </div>
-                            <div className="price">
-                                <h2>S/. 899</h2>
-                                <p>mensual</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col">
-                        <div className="card">
-                            <h2>Growth</h2>
-                            <p>
-                                Ideal para startups <br /> en crecimiento.
-                            </p>
-                            <div className="list">
-                                <div className="item">
-                                    <span> <img src={elipseBlack} alt="yes" /> </span> <span>Lorem ipsum tus</span>
-                                </div>
-                                <div className="item">
-                                    <span> <img src={elipseBlack} alt="yes" /> </span> <span>Lorem ipsum tus</span>
-                                </div>
-                                <div className="item">
-                                    <span> <img src={elipseBlack} alt="yes" /> </span> <span>Lorem ipsum tus</span>
-                                </div>
-                                <div className="item">
-                                    <span> <img src={elipseBlack} alt="yes" /> </span> <span>Lorem ipsum tus</span>
-                                </div>
-                            </div>
-                            <div className="price">
-                                <h2>Contáctanos</h2>
-                                <p className="none">call us</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <div className="row pricing">
+        <div className="card">
+          <h2>Basic</h2>
+          <p>Ideal para independientes o startups en plena incubación.</p>
+          <div className="list">
+            <div className="item">
+              <span>
+                <img src={elipseBlack} alt="yes" />
+              </span>
+              <span>Lorem ipsum tus</span>
             </div>
-        </React.Fragment>
-    );
+            <div className="item">
+              <span>
+                <img src={elipseBlack} alt="yes" />
+              </span>
+              <span>Lorem ipsum tus</span>
+            </div>
+            <div className="item">
+              <span>
+                <img src={elipseWhite} alt="no" />
+              </span>
+              <span>Lorem ipsum tus</span>
+            </div>
+            <div className="item">
+              <span>
+                <img src={elipseWhite} alt="no" />
+              </span>
+              <span>Lorem ipsum tus</span>
+            </div>
+          </div>
+          <div className="price">
+            <span>S/. 699</span>
+            <p>mensual</p>
+          </div>
+        </div>
+
+        <div className="card">
+          <h2>Pro</h2>
+          <p>
+            Ideal para startups que ya están realizando sus primeras ventas.
+          </p>
+          <div className="list">
+            <div className="item">
+              <span>
+                <img src={elipseBlack} alt="yes" />
+              </span>
+              <span>Lorem ipsum tus</span>
+            </div>
+            <div className="item">
+              <span>
+                <img src={elipseBlack} alt="yes" />
+              </span>
+              <span>Lorem ipsum tus</span>
+            </div>
+            <div className="item">
+              <span>
+                <img src={elipseBlack} alt="yes" />
+              </span>
+              <span>Lorem ipsum tus</span>
+            </div>
+            <div className="item">
+              <span>
+                <img src={elipseWhite} alt="no" />
+              </span>
+              <span>Lorem ipsum tus</span>
+            </div>
+          </div>
+          <div className="price">
+            <span>S/. 899</span>
+            <p>mensual</p>
+          </div>
+        </div>
+
+        <div className="card">
+          <h2>Growth</h2>
+          <p>
+            Ideal para startups <br /> en crecimiento.
+          </p>
+          <div className="list">
+            <div className="item">
+              <span>
+                <img src={elipseBlack} alt="yes" />
+              </span>
+              <span>Lorem ipsum tus</span>
+            </div>
+            <div className="item">
+              <span>
+                <img src={elipseBlack} alt="yes" />
+              </span>
+              <span>Lorem ipsum tus</span>
+            </div>
+            <div className="item">
+              <span>
+                <img src={elipseBlack} alt="yes" />
+              </span>
+              <span>Lorem ipsum tus</span>
+            </div>
+            <div className="item">
+              <span>
+                <img src={elipseBlack} alt="yes" />
+              </span>
+              <span>Lorem ipsum tus</span>
+            </div>
+          </div>
+          <div className="price">
+            <span>Contáctanos</span>
+            <p className="none">call us</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }
