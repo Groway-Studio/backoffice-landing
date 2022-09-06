@@ -1,7 +1,7 @@
 @import "./../base/_base.scss";
 
 .heroComponent {
-  width: $container;
+  @include width;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -10,10 +10,11 @@
   position: relative;
   z-index: 100;
   margin-top: 82px;
+
   @include tablet {
     width: $container-tablet;
     flex-direction: column;
-    margin-top: 140px;
+    margin-top: 6rem;
   }
   @include phone {
     width: $container-phone;
@@ -22,15 +23,14 @@
   }
 }
 .contentHero {
-  width: 90%;
-  padding-right: 12%;
+  width: 40%;
+
   @include tablet {
-    width: 100%;
     padding-right: 0%;
   }
   @include phone {
+    text-align: center;
     width: 100%;
-    padding-right: 0%;
   }
   h1 {
     font-weight: bold;
@@ -51,6 +51,10 @@
   div {
     display: flex;
     flex-direction: row;
+
+    @include phone {
+      justify-content: center;
+    }
   }
   p {
     font-style: italic;
@@ -75,9 +79,10 @@
   }
 }
 .ilusHero {
-  width: 669px;
+  width: 60%;
   @include tablet {
-    margin-top: 60px;
+    margin-top: 3rem;
+    width: 80%;
   }
   @include phone {
     width: 100%;

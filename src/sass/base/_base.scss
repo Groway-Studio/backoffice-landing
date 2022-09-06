@@ -1,17 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 
 $primary-color: #084887;
-$secondary-color: #F58A07;
-$neutral-color-1000: #031D44;
+$secondary-color: #f58a07;
+$neutral-color-1000: #031d44;
 $neutral-color-600: #111827;
-$neutral-color-500: #2F2E41;
-$neutral-color-400: #3F3D56;
-$neutral-color-100: #F9F7F8;
-$neutral-color-0: #FFFFFF;
-
+$neutral-color-500: #2f2e41;
+$neutral-color-400: #3f3d56;
+$neutral-color-100: #f9f7f8;
+$neutral-color-0: #ffffff;
 
 $size: 8px;
 $spacing: 4px;
@@ -57,5 +55,8 @@ $desktop_xl: 1920px;
   }
 }
 
-
-
+@mixin width {
+  max-width: $container;
+  width: 90%;
+  margin: 0 auto;
+}
