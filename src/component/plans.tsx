@@ -169,6 +169,13 @@ export default function Plans() {
               <span>
                 <img src={elipseBlack} alt="yes" />
               </span>
+              <span>...></div></span>
+            </div>
+
+            <div className="item">
+              <span>
+                <img src={elipseBlack} alt="yes" />
+              </span>
               <span>Lorem ipsum tus</span>
             </div>
           </div>
