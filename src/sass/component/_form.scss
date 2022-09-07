@@ -80,6 +80,10 @@
             line-height: 50px;
             margin-bottom: 8px;
 
+            span {
+              text-transform: uppercase;
+            }
+
             @include tablet {
               font-size: var(--size-4);
               line-height: 2rem;

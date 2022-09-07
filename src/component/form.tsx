@@ -1,8 +1,8 @@
 // import fbIlus from "./../assets/fb.svg";
 // import linkedinIlus from "./../assets/linkedin.svg";
 // import igIlus from "./../assets/instagram.svg";
+// import ilusContact from "./../assets/ilus-contact.svg";
 import { ButtonComponent } from "./shared";
-import ilusContact from "./../assets/ilus-contact.svg";
 import "../sass/component/_form.scss";
 
 import { Form, FormGroup, Label, Input, TextArea } from "./shared/forms";
@@ -11,13 +11,13 @@ export default function FormContact() {
   return (
     <div className="formComponent">
       <section className="container">
-        <h2 className="titleSection">Lorem Impsum</h2>
-
         <article className="talkto">
           <aside>
-            <img src={ilusContact} alt="" className="ilusContact" />
+            {/* <img src={ilusContact} alt="" className="ilusContact" /> */}
             <div className="text">
-              <h2>Contactar a un asesor</h2>
+              <h2>
+                Empieza tu prueba <span>gratuita</span>
+              </h2>
               <p>
                 Déjanos tus datos y un asesor se pondrá en contacto contigo a la
                 brevedad
