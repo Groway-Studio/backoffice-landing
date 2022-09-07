@@ -8,9 +8,9 @@ export default function Trial() {
     <div className={"trialComponent"}>
       <img src={franja} alt="" />
       <div className="contentTrial">
-        <h2>Pide tu periodo de prueba gratuito ahora</h2>
+        <h2>Pide tu periodo de prueba GRATIS!</h2>
         <br />
-        <ButtonComponent label="Prueba Groway Backoffice" />
+        <ButtonComponent label="Pedir ahora" />
       </div>
     </div>
   );
