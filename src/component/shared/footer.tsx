@@ -9,32 +9,13 @@ export default function Footer() {
     <div className="footerComponent">
       <section className="container">
         <aside className="logoSection">
-          <img className="brandTwo" src={LogoGrowayWhite} alt="" />
+          <img src={LogoGrowayWhite} alt="" />
         </aside>
-        {/* <aside className="ctaSection">
-          <span>
-            <a href="/#">Curso de Python</a>
-          </span>
-          <span>
-            <a href="/#">Sistema de Cursado</a>
-          </span>
-          <span>
-            <a href="/#">Más información</a>
-          </span>
-          <span>
-            <a href="/#">Brochure</a>
-          </span>
-        </aside> */}
-        <aside className="sectionRight">
-          <aside className="ubication">
-            <article>
-              <strong>Perú</strong>
-              <p>
-                AV. El Derby 055 Edificio Cronos, Torre 1 Piso 7 Santiago de
-                Surco Lima - Perú
-              </p>
-            </article>
-          </aside>
+            <aside className="ctaSection">
+          <article>
+            Escríbenos a:
+            <a href="mailto:hola@groway.studio">hola@groway.studio</a>
+          </article>
           <article className="socials">
             <a
               href="https://www.instagram.com/groway.studio"
@@ -57,6 +38,24 @@ export default function Footer() {
             >
               <img src={fbIlus} alt="Groway.Studio" />
             </a>
+          </article>
+        </aside>
+        <aside className="ubication">
+          <article>
+            <strong>Perú</strong> <br /> AV. El Derby 055 Edificio Cronos, Torre
+            1 Piso 7 Santiago de Surco Lima - Perú
+          </article>
+          <article>
+            <strong>EE.UU</strong>
+            <a href="tel:+1 786 7558193">+1 786 7558193</a>
+          </article>
+          <article>
+            <strong>Argentina</strong>
+            <a href="tel:+54 11 52175854">+54 11 52175854</a>
+          </article>
+          <article>
+            <strong>Colombia</strong>
+            <a href="tel:+57 15800311">+57 15800311</a>
           </article>
         </aside>
       </section>
