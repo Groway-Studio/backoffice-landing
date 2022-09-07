@@ -69,14 +69,39 @@
 }
 
 .services {
+  align-items: stretch;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 3rem 2rem;
   justify-content: center;
+
+  @include phone {
+    margin-top: 2rem;
+  }
 }
 
 .service-item {
   width: 30%;
   min-width: 300px;
+
+  &:last-child {
+    p {
+      margin-top: 5rem;
+      font-weight: 500;
+      font-size: 1rem;
+      font-style: italic;
+      color: #a6a6a6;
+
+      @include phone {
+        margin-top: 1rem;
+      }
+    }
+
+    @include tablet {
+      width: 100%;
+      display: flex;
+      gap: 2rem;
+    }
+  }
 }

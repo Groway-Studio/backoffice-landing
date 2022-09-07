@@ -9,7 +9,7 @@ export default function Services() {
       <div className="contentServices">
         <h2>Servicios de BackOffice</h2>
         <span>Para emprendedores, freelancers y nómadas digitales</span>
-        <div className="services mt-4">
+        <div className="services">
           <div className="service-item">
             <img src={calculatorIlus} className="calculatorIlus" alt="" />
             <h2>Gestión contable y tributaria</h2>
@@ -32,14 +32,10 @@ export default function Services() {
           </div>
           <div className="service-item disabled">
             <img src={consultancyIlus} className="consultancyIlus" alt="" />
-            <h2 className="disabled">
-              {" "}
-              <span className="italic">Próximamente</span> Asesoría Legal
-            </h2>
-            <p>
-              Cuenta con asesoría legal cuando la necesites para que puedas
-              respaldar las decisiones de tu negocio.
-            </p>
+            <div>
+              <h2 className="disabled">Asesoría Legal</h2>
+              <p>Coming soon</p>
+            </div>
           </div>
         </div>
       </div>

@@ -26,10 +26,9 @@
   width: 40%;
 
   @include tablet {
-    padding-right: 0%;
+    width: 100%;
   }
   @include phone {
-    text-align: center;
     width: 100%;
   }
   h1 {
@@ -51,10 +50,6 @@
   div {
     display: flex;
     flex-direction: row;
-
-    @include phone {
-      justify-content: center;
-    }
   }
   p {
     font-style: italic;
@@ -62,9 +57,14 @@
     font-size: 24px;
     line-height: 36px;
     color: #031d44;
-    margin: 24px 0 40px;
+    margin-bottom: 1rem;
+
+    @include tablet {
+      display: none;
+    }
+
     @include phone {
-      font-size: 18px;
+      display: none;
     }
     b {
       font-style: italic;
@@ -77,16 +77,30 @@
       }
     }
   }
+  &__button {
+    background: #084887;
+    border-radius: 10px;
+    padding: 0.5rem 2rem;
+    text-decoration: none;
+    color: #fff;
+
+    @include tablet {
+      display: none;
+    }
+
+    @include phone {
+      display: none;
+    }
+  }
 }
 .ilusHero {
   width: 60%;
   @include tablet {
     margin-top: 3rem;
-    width: 80%;
+    width: 100%;
   }
   @include phone {
     width: 100%;
-    margin-top: 24px;
   }
 }
 

@@ -11,8 +11,13 @@ export default function Hero() {
         <div>
           <span>BackOffice</span>
         </div>
+        <p>Para emprendedores, freelancers y nómadas digitales</p>
+
+        <a href="#form" className="contentHero__button">
+          Prueba gratis
+        </a>
       </div>
-      <img src={ilusHero} className="ilusHero" alt="" />
+      <img src={ilusHero} className="ilusHero" alt="HeroImage" />
     </div>
   );
 }
