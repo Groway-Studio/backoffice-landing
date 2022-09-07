@@ -38,16 +38,23 @@ export default function FormContact() {
     lastName,
     email,
     phoneNumber,
-    businessType,
-    monthlyIncomes,
-    interestServices,
+    // businessType,
+    // monthlyIncomes,
+    // interestServices,
   } = formState;
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
   };
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {};
+  const handleInputChange = ({
+    target,
+  }: React.ChangeEvent<HTMLInputElement>) => {
+    setFormState((prevState) => ({
+      ...prevState,
+      [target.name]: target.value,
+    }));
+  };
 
   return (
     <div className="formComponent" id="form">
