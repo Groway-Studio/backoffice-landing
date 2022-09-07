@@ -169,7 +169,7 @@ export default function Plans() {
               <span>
                 <img src={elipseBlack} alt="yes" />
               </span>
-              <span>...></div></span>
+              <span></span>
             </div>
 
             <div className="item">
