@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.991b1a5a.css",
+    "main.css": "/static/css/main.1890f08b.css",
     "main.js": "/static/js/main.ea150f59.js",
     "static/media/ilus-hero.svg": "/static/media/ilus-hero.19ccff2df43026474ec5fc6570b8bebd.svg",
     "static/media/assistance.svg": "/static/media/assistance.fc18d5e06f207f268b9d8f3c7b52065d.svg",
@@ -15,11 +15,11 @@
     "static/media/blob-header.svg": "/static/media/blob-header.40bf460f070ed3d8fb2ca2ada5514803.svg",
     "static/media/elipse-white.svg": "/static/media/elipse-white.3a1cc96e9061a9f956d6563b726ca882.svg",
     "static/media/elipse-black.svg": "/static/media/elipse-black.7a8629a7ada4c9648aa5a43de4f4a7e8.svg",
-    "main.991b1a5a.css.map": "/static/css/main.991b1a5a.css.map",
+    "main.1890f08b.css.map": "/static/css/main.1890f08b.css.map",
     "main.ea150f59.js.map": "/static/js/main.ea150f59.js.map"
   },
   "entrypoints": [
-    "static/css/main.991b1a5a.css",
+    "static/css/main.1890f08b.css",
     "static/js/main.ea150f59.js"
   ]
 }
