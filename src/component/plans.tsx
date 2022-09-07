@@ -17,13 +17,13 @@ export default function Plans() {
               <span>
                 <img src={elipseBlack} alt="yes" />
               </span>
-              <span>Lorem ipsum tus</span>
+              <span>Asistente administrativo virtual</span>
             </div>
             <div className="item">
               <span>
                 <img src={elipseBlack} alt="yes" />
               </span>
-              <span>Lorem ipsum tus</span>
+              <span>Consultorio de negocios</span>
             </div>
             <div className="item">
               <span>
@@ -54,13 +54,37 @@ export default function Plans() {
               <span>
                 <img src={elipseBlack} alt="yes" />
               </span>
-              <span>Lorem ipsum tus</span>
+              <span>Asistente administrativo virtual</span>
             </div>
             <div className="item">
               <span>
                 <img src={elipseBlack} alt="yes" />
               </span>
-              <span>Lorem ipsum tus</span>
+              <span>Consultorio de negocios</span>
+            </div>
+            <div className="item">
+              <span>
+                <img src={elipseBlack} alt="yes" />
+              </span>
+              <span>Asesoría contable</span>
+            </div>
+            <div className="item">
+              <span>
+                <img src={elipseBlack} alt="yes" />
+              </span>
+              <span>Declaración de impuestos</span>
+            </div>
+            <div className="item">
+              <span>
+                <img src={elipseBlack} alt="yes" />
+              </span>
+              <span>Registro de libros contables</span>
+            </div>
+            <div className="item">
+              <span>
+                <img src={elipseBlack} alt="yes" />
+              </span>
+              <span>Generación de balances y reportes</span>
             </div>
             <div className="item">
               <span>
@@ -91,19 +115,55 @@ export default function Plans() {
               <span>
                 <img src={elipseBlack} alt="yes" />
               </span>
-              <span>Lorem ipsum tus</span>
+              <span>Asistente administrativo virtual</span>
             </div>
             <div className="item">
               <span>
                 <img src={elipseBlack} alt="yes" />
               </span>
-              <span>Lorem ipsum tus</span>
+              <span>Consultorio de negocios</span>
             </div>
             <div className="item">
               <span>
                 <img src={elipseBlack} alt="yes" />
               </span>
-              <span>Lorem ipsum tus</span>
+              <span>Asesoría contable</span>
+            </div>
+            <div className="item">
+              <span>
+                <img src={elipseBlack} alt="yes" />
+              </span>
+              <span>Declaración de impuestos</span>
+            </div>
+            <div className="item">
+              <span>
+                <img src={elipseBlack} alt="yes" />
+              </span>
+              <span>Registro de libros contables</span>
+            </div>
+            <div className="item">
+              <span>
+                <img src={elipseBlack} alt="yes" />
+              </span>
+              <span>Generación de balances y reportes</span>
+            </div>
+            <div className="item">
+              <span>
+                <img src={elipseBlack} alt="yes" />
+              </span>
+              <span>Asistente virtual exclusivo</span>
+            </div>
+            <div className="item">
+              <span>
+                <img src={elipseBlack} alt="yes" />
+              </span>
+              <span>Asesoría y acompañamiento legal</span>
+            </div>
+            <div className="item">
+              <span>
+                <img src={elipseBlack} alt="yes" />
+              </span>
+              <span>Facturación electrónica</span>
             </div>
             <div className="item">
               <span>
