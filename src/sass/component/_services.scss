@@ -11,13 +11,10 @@
     width: $container-tablet;
     flex-direction: column;
     margin-top: 140px;
-    //   position: inherit;
   }
   @include phone {
     width: $container-phone;
     flex-direction: column;
-    //   height: 490px;
-    //   position: inherit;
   }
 }
 .contentServices {
@@ -75,6 +72,7 @@
   flex-wrap: wrap;
   gap: 3rem 2rem;
   justify-content: center;
+  margin-top: 5rem;
 
   @include phone {
     margin-top: 2rem;
