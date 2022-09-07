@@ -1,11 +1,9 @@
 import styled from "styled-components";
 
 export const Form = styled.form`
-  align-items: flex-end;
-  display: flex;
-  flex-direction: column;
-  gap: 0.7rem;
-  justify-content: flex-end;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, calc(50% - 0.5rem));
   width: 100%;
 `;
 
@@ -18,6 +16,8 @@ export const FormGroup = styled.div`
 
 export const Label = styled.label`
   color: #031d44;
+  margin-left: 0.3rem;
+  min-width: 145px;
 `;
 
 export const Input = styled.input`
@@ -29,17 +29,22 @@ export const Input = styled.input`
   padding: 0.3rem 0.5rem;
 `;
 
-export const TextArea = styled.textarea`
+export const Select = styled.select`
   background: #e5e5e5;
   border-radius: 10px;
   border: none;
   font-size: 1rem;
-  height: 108px;
-  padding: 1rem;
-  resize: none;
+  height: 2.8rem;
+  padding: 0.3rem 0.5rem;
 `;
 
-export const Message = styled.label`
-  margin-bottom: 0.5rem;
-  color: palevioletred;
+export const Checkbox = styled.input.attrs({ type: "checkbox" })`
+  accent-color: #e5e5e5;
+
+  border-radius: 4px;
+  border: none;
+  height: 1rem;
+  width: 1rem;
 `;
+
+export const Option = styled.option``;

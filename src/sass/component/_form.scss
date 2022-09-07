@@ -46,22 +46,26 @@
       border-radius: 10px;
       padding: 32px 56px;
       margin-bottom: 56px;
-      display: flex;
-      flex-direction: row;
+      display: grid;
+
+      align-items: flex-end;
+      grid-template-columns: 60% 40%;
       position: relative;
 
       @include phone {
-        flex-direction: column;
+        grid-template-columns: 100%;
         padding: 32px 40px 32px;
         gap: 1rem;
       }
 
       @include tablet {
         margin-top: 1.5rem;
+        gap: 1rem;
+        grid-template-columns: repeat(2, calc(50% - 0.5rem));
       }
 
       aside {
-        width: 45%;
+        width: 100%;
         text-align: left;
         @include phone {
           width: 100%;
@@ -69,12 +73,17 @@
 
         .text {
           position: relative;
-          top: 160px;
+          top: -4rem;
 
           @include phone {
             text-align: center;
             top: 0;
           }
+
+          @include tablet {
+            top: -3.4rem;
+          }
+
           h2 {
             font-size: var(--size-6);
             line-height: 50px;
@@ -91,12 +100,18 @@
           }
           p {
             font-weight: 400;
-            font-size: 14px;
+            font-size: 1rem;
             line-height: 21px !important;
             color: #031d44;
+            width: 80%;
 
             @include phone {
-              text-align: left;
+              width: 100%;
+              text-align: center;
+            }
+
+            @include tablet {
+              width: 90%;
             }
           }
           .socials {
@@ -110,13 +125,79 @@
           }
         }
         &:last-child {
-          width: 55%;
-          padding-left: 65px;
-
           @include phone {
-            width: 100%;
             padding-left: 0px;
             top: -80px;
+          }
+
+          form {
+            @include phone {
+              gap: 0.7rem 1rem;
+            }
+
+            .form__group {
+              &:nth-child(1),
+              &:nth-child(2),
+              &:nth-child(4) {
+                @include phone {
+                  grid-column: 1 / -1;
+                }
+              }
+
+              &:nth-child(3) {
+                grid-column: 1 / -1;
+              }
+
+              &:nth-child(5) {
+                option {
+                  text-transform: capitalize;
+                }
+
+                @include phone {
+                  grid-column: 1 / -1;
+                }
+              }
+
+              &:nth-child(6) {
+                grid-column: 1 / -1;
+
+                option {
+                  text-transform: capitalize;
+                }
+              }
+
+              &:nth-child(7) {
+                display: grid;
+                grid-template-columns: 50% 50%;
+
+                @include tablet {
+                  grid-template-columns: 100%;
+                }
+
+                div {
+                  align-items: center;
+                  display: flex;
+                  margin-left: 0.3rem;
+
+                  label {
+                    text-transform: capitalize;
+                  }
+                }
+
+                &,
+                label {
+                  grid-column: 1 / -1;
+                }
+
+                @include phone {
+                  grid-template-columns: 100%;
+                }
+              }
+            }
+            button {
+              grid-column: 2 / -1;
+              padding: 0;
+            }
           }
         }
       }
@@ -126,16 +207,16 @@
 
 .ilusContact {
   position: absolute;
-  top: -150px;
+  top: -4rem;
 
   @include phone {
-    top: -45%;
+    top: -36%;
     left: 0;
   }
 
   @include tablet {
-    width: 40%;
-    top: -5rem;
-    left: 2rem;
+    width: 45%;
+    top: 0;
+    left: 1rem;
   }
 }

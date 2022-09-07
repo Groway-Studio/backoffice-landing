@@ -28,6 +28,10 @@
   --paragraph-1: var(--size-2);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   box-sizing: border-box;
   font-family: Poppins;
