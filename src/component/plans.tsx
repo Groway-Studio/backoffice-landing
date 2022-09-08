@@ -10,32 +10,34 @@ export default function Plans() {
 
       <div className="row pricing">
         <div className="card">
-          <h2>Basic</h2>
-          <p>Ideal para independientes o startups en plena incubación.</p>
-          <div className="list">
-            <div className="item">
-              <span>
-                <img src={elipseBlack} alt="yes" />
-              </span>
-              <span>Asistente administrativo virtual</span>
-            </div>
-            <div className="item">
-              <span>
-                <img src={elipseBlack} alt="yes" />
-              </span>
-              <span>Consultorio de negocios</span>
-            </div>
-            <div className="item">
-              <span>
-                <img src={elipseWhite} alt="no" />
-              </span>
-              <span>Lorem ipsum tus</span>
-            </div>
-            <div className="item">
-              <span>
-                <img src={elipseWhite} alt="no" />
-              </span>
-              <span>Lorem ipsum tus</span>
+          <div>
+            <h2>Basic</h2>
+            <p>Ideal para independientes o startups en plena incubación.</p>
+            <div className="list">
+              <div className="item">
+                <span>
+                  <img src={elipseBlack} alt="yes" />
+                </span>
+                <span>Asistente administrativo virtual</span>
+              </div>
+              <div className="item">
+                <span>
+                  <img src={elipseBlack} alt="yes" />
+                </span>
+                <span>Consultorio de negocios</span>
+              </div>
+              <div className="item">
+                <span>
+                  <img src={elipseWhite} alt="no" />
+                </span>
+                <span>Lorem ipsum tus</span>
+              </div>
+              <div className="item">
+                <span>
+                  <img src={elipseWhite} alt="no" />
+                </span>
+                <span>Lorem ipsum tus</span>
+              </div>
             </div>
           </div>
           <div className="price">
@@ -45,58 +47,60 @@ export default function Plans() {
         </div>
 
         <div className="card">
-          <h2>Pro</h2>
-          <p>
-            Ideal para startups que ya están realizando sus primeras ventas.
-          </p>
-          <div className="list">
-            <div className="item">
-              <span>
-                <img src={elipseBlack} alt="yes" />
-              </span>
-              <span>Asistente administrativo virtual</span>
-            </div>
-            <div className="item">
-              <span>
-                <img src={elipseBlack} alt="yes" />
-              </span>
-              <span>Consultorio de negocios</span>
-            </div>
-            <div className="item">
-              <span>
-                <img src={elipseBlack} alt="yes" />
-              </span>
-              <span>Asesoría contable</span>
-            </div>
-            <div className="item">
-              <span>
-                <img src={elipseBlack} alt="yes" />
-              </span>
-              <span>Declaración de impuestos</span>
-            </div>
-            <div className="item">
-              <span>
-                <img src={elipseBlack} alt="yes" />
-              </span>
-              <span>Registro de libros contables</span>
-            </div>
-            <div className="item">
-              <span>
-                <img src={elipseBlack} alt="yes" />
-              </span>
-              <span>Generación de balances y reportes</span>
-            </div>
-            <div className="item">
-              <span>
-                <img src={elipseBlack} alt="yes" />
-              </span>
-              <span>Lorem ipsum tus</span>
-            </div>
-            <div className="item">
-              <span>
-                <img src={elipseWhite} alt="no" />
-              </span>
-              <span>Lorem ipsum tus</span>
+          <div>
+            <h2>Pro</h2>
+            <p>
+              Ideal para startups que ya están realizando sus primeras ventas.
+            </p>
+            <div className="list">
+              <div className="item">
+                <span>
+                  <img src={elipseBlack} alt="yes" />
+                </span>
+                <span>Asistente administrativo virtual</span>
+              </div>
+              <div className="item">
+                <span>
+                  <img src={elipseBlack} alt="yes" />
+                </span>
+                <span>Consultorio de negocios</span>
+              </div>
+              <div className="item">
+                <span>
+                  <img src={elipseBlack} alt="yes" />
+                </span>
+                <span>Asesoría contable</span>
+              </div>
+              <div className="item">
+                <span>
+                  <img src={elipseBlack} alt="yes" />
+                </span>
+                <span>Declaración de impuestos</span>
+              </div>
+              <div className="item">
+                <span>
+                  <img src={elipseBlack} alt="yes" />
+                </span>
+                <span>Registro de libros contables</span>
+              </div>
+              <div className="item">
+                <span>
+                  <img src={elipseBlack} alt="yes" />
+                </span>
+                <span>Generación de balances y reportes</span>
+              </div>
+              <div className="item">
+                <span>
+                  <img src={elipseBlack} alt="yes" />
+                </span>
+                <span>Lorem ipsum tus</span>
+              </div>
+              <div className="item">
+                <span>
+                  <img src={elipseWhite} alt="no" />
+                </span>
+                <span>Lorem ipsum tus</span>
+              </div>
             </div>
           </div>
           <div className="price">
@@ -106,77 +110,72 @@ export default function Plans() {
         </div>
 
         <div className="card">
-          <h2>Growth</h2>
-          <p>
-            Ideal para startups <br /> en crecimiento.
-          </p>
-          <div className="list">
-            <div className="item">
-              <span>
-                <img src={elipseBlack} alt="yes" />
-              </span>
-              <span>Asistente administrativo virtual</span>
-            </div>
-            <div className="item">
-              <span>
-                <img src={elipseBlack} alt="yes" />
-              </span>
-              <span>Consultorio de negocios</span>
-            </div>
-            <div className="item">
-              <span>
-                <img src={elipseBlack} alt="yes" />
-              </span>
-              <span>Asesoría contable</span>
-            </div>
-            <div className="item">
-              <span>
-                <img src={elipseBlack} alt="yes" />
-              </span>
-              <span>Declaración de impuestos</span>
-            </div>
-            <div className="item">
-              <span>
-                <img src={elipseBlack} alt="yes" />
-              </span>
-              <span>Registro de libros contables</span>
-            </div>
-            <div className="item">
-              <span>
-                <img src={elipseBlack} alt="yes" />
-              </span>
-              <span>Generación de balances y reportes</span>
-            </div>
-            <div className="item">
-              <span>
-                <img src={elipseBlack} alt="yes" />
-              </span>
-              <span>Asistente virtual exclusivo</span>
-            </div>
-            <div className="item">
-              <span>
-                <img src={elipseBlack} alt="yes" />
-              </span>
-              <span>Asesoría y acompañamiento legal</span>
-            </div>
-            <div className="item">
-              <span>
-                <img src={elipseBlack} alt="yes" />
-              </span>
-              <span>Facturación electrónica</span>
-            </div>
-            <div className="item">
-              <span>
-                <img src={elipseBlack} alt="yes" />
-              </span>
-              <span></span>
-            </div>
-
-            <div className="item">
-              <span>
-                <img src={elipseBlack} alt="yes" />
-              </span>
-              <span>Lorem ipsum tus</span>
+          <div>
+            <h2>Growth</h2>
+            <p>
+              Ideal para startups <br /> en crecimiento.
+            </p>
+            <div className="list">
+              <div className="item">
+                <span>
+                  <img src={elipseBlack} alt="yes" />
+                </span>
+                <span>Asistente administrativo virtual</span>
+              </div>
+              <div className="item">
+                <span>
+                  <img src={elipseBlack} alt="yes" />
+                </span>
+                <span>Consultorio de negocios</span>
+              </div>
+              <div className="item">
+                <span>
+                  <img src={elipseBlack} alt="yes" />
+                </span>
+                <span>Asesoría contable</span>
+              </div>
+              <div className="item">
+                <span>
+                  <img src={elipseBlack} alt="yes" />
+                </span>
+                <span>Declaración de impuestos</span>
+              </div>
+              <div className="item">
+                <span>
+                  <img src={elipseBlack} alt="yes" />
+                </span>
+                <span>Registro de libros contables</span>
+              </div>
+              <div className="item">
+                <span>
+                  <img src={elipseBlack} alt="yes" />
+                </span>
+                <span>Generación de balances y reportes</span>
+              </div>
+              <div className="item">
+                <span>
+                  <img src={elipseBlack} alt="yes" />
+                </span>
+                <span>Asistente virtual exclusivo</span>
+              </div>
+              <div className="item">
+                <span>
+                  <img src={elipseBlack} alt="yes" />
+                </span>
+                <span>Asesoría y acompañamiento legal</span>
+              </div>
+              <div className="item">
+                <span>
+                  <img src={elipseBlack} alt="yes" />
+                </span>
+                <span>Facturación electrónica</span>
+              </div>
+              <div className="item">
+                <span>
+                  <img src={elipseBlack} alt="yes" />
+                </span>
+                <span>Lorem ipsum tus</span>
+              </div>
             </div>
           </div>
           <div className="price">
