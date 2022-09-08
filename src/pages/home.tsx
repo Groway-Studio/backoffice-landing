@@ -6,7 +6,7 @@ import {
   Overlay,
   Plans,
   Services,
-  Testimonials,
+  // Testimonials,
   Trial,
 } from "../component";
 import { Footer, Header } from "../component/shared";
