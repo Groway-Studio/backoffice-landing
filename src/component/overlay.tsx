@@ -18,15 +18,17 @@ const Overlay = () => {
           Déjanos tu correo y te avisaremos cuando esté disponible para tu país.
         </p>
 
-        <Input
-          className="overlay__content_input"
-          type="email"
-          value={email}
-          onChange={({ target }) => setEmail(target.value)}
-          placeholder="example@groway.studio"
-        />
+        <form className="overlay__content_form">
+          <Input
+            className="overlay__content_input"
+            type="email"
+            value={email}
+            onChange={({ target }) => setEmail(target.value)}
+            placeholder="example@groway.studio"
+          />
 
-        <button className="overlay__content_button">Enviar</button>
+          <button className="overlay__content_button">Enviar</button>
+        </form>
       </section>
     </div>
   );

@@ -3,26 +3,27 @@
 .overlay {
   align-items: center;
   background: #000000cf;
-  border-radius: 1.5rem;
   color: #fff;
   display: flex;
   flex-direction: column;
   gap: 5rem;
-  height: 75vh;
-  justify-content: flex-end;
-  left: 5%;
-  margin: 0 auto;
-  max-width: $container;
-  padding-bottom: 6rem;
+  height: 100vh;
+  justify-content: center;
+  overflow-y: hidden;
   position: fixed;
-  top: 6%;
-  width: 90%;
+  width: 100%;
   z-index: 3000;
 
   &__title,
   &__content {
+    max-width: 700px;
     text-align: center;
-    width: 70%;
+    width: 60%;
+
+    @include phone {
+      width: 80%;
+      max-width: $container-phone;
+    }
   }
 
   &__title {
@@ -30,8 +31,15 @@
     font-size: 3rem;
     font-weight: 600;
     line-height: 3.5rem;
-    max-width: 700px;
-    text-transform: uppercase;
+
+    @include tablet {
+      font-size: 2.3rem;
+    }
+
+    @include phone {
+      line-height: 2.5rem;
+      font-size: 2rem;
+    }
 
     span {
       font-weight: 900;
@@ -40,23 +48,53 @@
   }
 
   &__content {
+    &_form {
+      align-items: flex-end;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin: 0 auto;
+      width: 70%;
+
+      @include phone {
+        width: 95%;
+      }
+    }
+
     &_input {
-      width: 80%;
+      font-size: 2rem;
       text-align: center;
+      width: 100%;
     }
 
     &_description {
       font-size: 2.25rem;
       margin-bottom: 1rem;
+
+      @include tablet {
+        font-size: 1.8rem;
+      }
+
+      @include phone {
+        font-size: 1.5rem;
+        line-height: 2rem;
+      }
     }
 
     &_button {
-      padding: 0.5rem 4rem;
+      padding: 0.3rem 0;
       background: #084887;
       border: none;
       border-radius: 10px;
       color: #fff;
       font-size: 1.5rem;
+      display: block;
+      width: 150px;
+
+      @include phone {
+        padding: 0.5rem 0;
+        font-size: 1.2rem;
+      }
     }
   }
 }

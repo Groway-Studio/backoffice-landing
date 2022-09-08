@@ -3,6 +3,7 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 :root {
@@ -33,7 +34,6 @@ html {
 }
 
 body {
-  box-sizing: border-box;
   font-family: Poppins;
 }
 
@@ -76,7 +76,7 @@ p {
   @include phone {
     font-size: 12px;
     font-weight: 400 !important;
-    line-height: 16px !important;
+    line-height: 16px;
   }
 }
 

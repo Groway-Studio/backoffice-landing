@@ -21,7 +21,6 @@ export default function Home() {
     (async () => {
       try {
         const request = await fetch("http://ip-api.com/json", {
-          mode: "cors",
           method: "GET",
           headers: { "Content-Type": "application/json" },
         });
@@ -47,14 +46,14 @@ export default function Home() {
   }, [country]);
 
   return (
-    <div className="box">
+    <div className={`box ${showOverlay ? "overflow" : ""}`}>
       {showOverlay && <Overlay />}
       <Header />
       <Hero />
       <Services />
       <Trial />
       <Plans />
-      <FormContact />
+      <FormContact showOverlay={showOverlay} />
       <Footer />
     </div>
   );
