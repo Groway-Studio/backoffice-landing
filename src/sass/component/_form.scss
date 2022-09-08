@@ -218,6 +218,8 @@
   }
 }
 
-.line-through {
-  text-decoration: line-through;
+.disabled {
+  label {
+    color: #c4c4c4;
+  }
 }

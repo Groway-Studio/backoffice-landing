@@ -148,6 +148,7 @@ export default function FormContact() {
               <FormGroup className="form__group">
                 <Label htmlFor="first_name">Nombre</Label>
                 <Input
+                  type="text"
                   id="first_name"
                   value={first_name}
                   name="first_name"
@@ -157,6 +158,7 @@ export default function FormContact() {
               <FormGroup className="form__group">
                 <Label htmlFor="last_name">Apellido</Label>
                 <Input
+                  type="text"
                   id="last_name"
                   value={last_name}
                   name="last_name"
@@ -166,6 +168,7 @@ export default function FormContact() {
               <FormGroup className="form__group">
                 <Label htmlFor="email">Correo Electrónico</Label>
                 <Input
+                  type="email"
                   id="email"
                   value={email}
                   name="email"
@@ -175,6 +178,7 @@ export default function FormContact() {
               <FormGroup className="form__group">
                 <Label htmlFor="phone">Teléfono</Label>
                 <Input
+                  type="tel"
                   id="phone"
                   value={phone}
                   name="phone"
@@ -232,7 +236,7 @@ export default function FormContact() {
                 {services_of_interest.map(({ name }, index) => (
                   <div
                     key={name}
-                    className={`${index === 2 ? "line-through" : ""}`}
+                    className={`${index === 2 ? "disabled" : ""}`}
                   >
                     <Checkbox
                       id={name}
