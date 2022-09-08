@@ -22,7 +22,11 @@ import {
 } from "../utils";
 import { FormState, SelectOptions } from "../interfaces";
 
-export default function FormContact() {
+interface Props {
+  showOverlay: boolean;
+}
+
+export default function FormContact({ showOverlay }: Props) {
   const [formState, setFormState] = useState<FormState>({
     first_name: "",
     last_name: "",
@@ -45,6 +49,8 @@ export default function FormContact() {
     e: React.FormEvent<HTMLFormElement | HTMLSelectElement>
   ) => {
     e.preventDefault();
+
+    if (showOverlay) return;
 
     try {
       const invalidService = services_requested.filter(
