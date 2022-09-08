@@ -4,11 +4,14 @@ export interface ServicesOfInterest {
 }
 
 export interface FormState {
-  firstName: string;
-  lastName: string;
+  first_name: string;
+  last_name: string;
   email: string;
-  phoneNumber: string;
-  businessType: string;
-  monthlyIncomes: string;
-  interestServices: string[];
+  phone: string;
+  business_name: string;
+}
+
+export interface SelectOptions {
+  business_type: string;
+  market_size: string;
 }
