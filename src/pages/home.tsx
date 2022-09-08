@@ -18,9 +18,11 @@ export default function Home() {
   const searchParams = new URLSearchParams(paramsString);
 
   useEffect(() => {
+    if (searchParams.get("debug") === "true") return;
+
     (async () => {
       try {
-        const request = await fetch("http://ip-api.com/json", {
+        const request = await fetch("https://ipinfo.io/?token=7a04bba2097fbf", {
           method: "GET",
           headers: { "Content-Type": "application/json" },
         });
@@ -31,12 +33,14 @@ export default function Home() {
         throw new Error(error);
       }
     })();
+
+    // eslint-disable-next-line
   }, []);
 
   useEffect(() => {
     if (searchParams.get("debug") === "true") return;
 
-    if (country !== "Peru") {
+    if (country !== "PE") {
       setShowOverlay(true);
     } else {
       setShowOverlay(false);
