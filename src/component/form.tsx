@@ -70,19 +70,17 @@ export default function FormContact({ showOverlay }: Props) {
 
       const body = { ...formState, ...options, services_requested };
 
-      console.log(JSON.stringify(body));
+      const request = await fetch(
+        "https://backoffice-git-main-joelibaceta.vercel.app/api/contact.py",
+        {
+          method: "POST",
+          body: JSON.stringify(body),
+        }
+      );
 
-      // const request = await fetch(
-      //   "https://backoffice-flax-gamma.vercel.app/api/contact.py",
-      //   {
-      //     method: "POST",
-      //     body: JSON.stringify(body),
-      //   }
-      // );
+      const response: string = await request.text();
 
-      // const response = await request.json();
-
-      // console.log(response);
+      console.log(response);
     } catch (error: any) {
       throw new Error(error);
     }
