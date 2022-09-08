@@ -6,13 +6,15 @@ import {
   Overlay,
   Plans,
   Services,
+  Testimonials,
   Trial,
 } from "../component";
 import { Footer, Header } from "../component/shared";
 
 export default function Home() {
-  const [country, setCountry] = useState<string>("");
+  const [country, setCountry] = useState<string | null>(null);
   const [showOverlay, setShowOverlay] = useState(false);
+  const [errorMessage, setErrorMessage] = useState(false);
 
   const paramsString = window.location.search;
   const searchParams = new URLSearchParams(paramsString);
@@ -30,6 +32,8 @@ export default function Home() {
 
         setCountry(response.country);
       } catch (error: any) {
+        setCountry("");
+        setErrorMessage(true);
         throw new Error(error);
       }
     })();
@@ -40,10 +44,12 @@ export default function Home() {
   useEffect(() => {
     if (searchParams.get("debug") === "true") return;
 
-    if (country !== "PE") {
-      setShowOverlay(true);
-    } else {
-      setShowOverlay(false);
+    if (country?.trim().length! >= 0) {
+      if (errorMessage || country !== "PE") {
+        setShowOverlay(true);
+      } else {
+        setShowOverlay(false);
+      }
     }
 
     // eslint-disable-next-line
@@ -57,6 +63,7 @@ export default function Home() {
       <Services />
       <Trial />
       <Plans />
+      {/* <Testimonials /> */}
       <FormContact showOverlay={showOverlay} />
       <Footer />
     </div>
