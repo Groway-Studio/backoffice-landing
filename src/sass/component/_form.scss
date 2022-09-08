@@ -158,15 +158,12 @@
                 }
               }
 
-              &:nth-child(6) {
+              &:nth-child(6),
+              &:nth-child(7) {
                 grid-column: 1 / -1;
-
-                option {
-                  text-transform: capitalize;
-                }
               }
 
-              &:nth-child(7) {
+              &:nth-child(8) {
                 display: grid;
                 grid-template-columns: 50% 50%;
 
@@ -207,7 +204,7 @@
 
 .ilusContact {
   position: absolute;
-  top: -4rem;
+  top: -0rem;
 
   @include phone {
     top: -36%;
@@ -219,4 +216,8 @@
     top: 0;
     left: 1rem;
   }
+}
+
+.line-through {
+  text-decoration: line-through;
 }

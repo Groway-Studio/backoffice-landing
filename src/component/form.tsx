@@ -20,31 +20,66 @@ import {
   types_of_business,
   services_of_interest,
 } from "../utils";
-import { FormState } from "../interfaces";
+import { FormState, SelectOptions } from "../interfaces";
 
 export default function FormContact() {
   const [formState, setFormState] = useState<FormState>({
-    firstName: "",
-    lastName: "",
+    first_name: "",
+    last_name: "",
     email: "",
-    phoneNumber: "",
-    businessType: "",
-    monthlyIncomes: "",
-    interestServices: [],
+    phone: "",
+    business_name: "",
   });
 
-  const {
-    firstName,
-    lastName,
-    email,
-    phoneNumber,
-    // businessType,
-    // monthlyIncomes,
-    // interestServices,
-  } = formState;
+  const [options, setOptions] = useState<SelectOptions>({
+    business_type: "",
+    market_size: "",
+  });
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const [services_requested, setServicesRequested] = useState<string[]>([]);
+
+  const { first_name, last_name, email, phone, business_name } = formState;
+  const { business_type, market_size } = options;
+
+  const handleSubmit = async (
+    e: React.FormEvent<HTMLFormElement | HTMLSelectElement>
+  ) => {
     e.preventDefault();
+
+    try {
+      const invalidService = services_requested.filter(
+        (service) => service === "asesoría legal"
+      );
+
+      if (invalidService.length !== 0) return;
+
+      if (
+        Object.values({ ...formState, ...options }).every(
+          (item) => item.trim() !== ""
+        ) === false
+      )
+        return;
+
+      if (services_requested.length === 0) return;
+
+      const body = { ...formState, ...options, services_requested };
+
+      console.log(JSON.stringify(body));
+
+      // const request = await fetch(
+      //   "https://backoffice-flax-gamma.vercel.app/api/contact.py",
+      //   {
+      //     method: "POST",
+      //     body: JSON.stringify(body),
+      //   }
+      // );
+
+      // const response = await request.json();
+
+      // console.log(response);
+    } catch (error: any) {
+      throw new Error(error);
+    }
   };
 
   const handleInputChange = ({
@@ -54,6 +89,17 @@ export default function FormContact() {
       ...prevState,
       [target.name]: target.value,
     }));
+  };
+
+  const handleServices = ({ target }: React.ChangeEvent<HTMLInputElement>) => {
+    if (target.checked) {
+      setServicesRequested((state) => [...state, target.name]);
+    } else {
+      const servicesFiltered = services_requested.filter(
+        (service) => service !== target.name
+      );
+      setServicesRequested(servicesFiltered);
+    }
   };
 
   return (
@@ -100,58 +146,100 @@ export default function FormContact() {
           <aside>
             <Form onSubmit={handleSubmit}>
               <FormGroup className="form__group">
-                <Label htmlFor="firstName">Nombre</Label>
+                <Label htmlFor="first_name">Nombre</Label>
                 <Input
-                  id="firstName"
-                  value={firstName}
-                  name="firstName"
+                  id="first_name"
+                  value={first_name}
+                  name="first_name"
                   onChange={handleInputChange}
                 />
               </FormGroup>
               <FormGroup className="form__group">
-                <Label htmlFor="lastName">Apellido</Label>
+                <Label htmlFor="last_name">Apellido</Label>
                 <Input
-                  id="lastName"
-                  value={lastName}
-                  name="lastName"
+                  id="last_name"
+                  value={last_name}
+                  name="last_name"
                   onChange={handleInputChange}
                 />
               </FormGroup>
               <FormGroup className="form__group">
                 <Label htmlFor="email">Correo Electrónico</Label>
-                <Input id="email" value={email} name="email" />
+                <Input
+                  id="email"
+                  value={email}
+                  name="email"
+                  onChange={handleInputChange}
+                />
               </FormGroup>
               <FormGroup className="form__group">
-                <Label htmlFor="phoneNumber">Teléfono</Label>
+                <Label htmlFor="phone">Teléfono</Label>
                 <Input
-                  id="phoneNumber"
-                  value={phoneNumber}
-                  name="phoneNumber"
+                  id="phone"
+                  value={phone}
+                  name="phone"
                   onChange={handleInputChange}
                 />
               </FormGroup>
               <FormGroup className="form__group">
                 <Label>Tipo de Negocio</Label>
-                <Select>
+                <Select
+                  value={business_type}
+                  onChange={({ target }) =>
+                    setOptions((prevState) => ({
+                      ...prevState,
+                      business_type: target.value,
+                    }))
+                  }
+                >
                   {types_of_business.map(({ text, value }) => (
-                    <Option key={value}>{text}</Option>
+                    <Option key={value} value={value}>
+                      {text}
+                    </Option>
                   ))}
                 </Select>
               </FormGroup>
               <FormGroup className="form__group">
+                <Label htmlFor="business_name">Nombre del negocio</Label>
+                <Input
+                  id="business_name"
+                  value={business_name}
+                  name="business_name"
+                  onChange={handleInputChange}
+                />
+              </FormGroup>
+              <FormGroup className="form__group">
                 <Label>Facturación Mensual</Label>
-                <Select>
+                <Select
+                  value={market_size}
+                  onChange={({ target }) =>
+                    setOptions((prevState) => ({
+                      ...prevState,
+                      market_size: target.value,
+                    }))
+                  }
+                >
                   {monthly_income.map(({ text, value }) => (
-                    <Option key={value}>{text}</Option>
+                    <Option key={value} value={value}>
+                      {text}
+                    </Option>
                   ))}
                 </Select>
               </FormGroup>
               <FormGroup className="form__group">
                 <Label>Servicios de Interés</Label>
 
-                {services_of_interest.map(({ name }) => (
-                  <div key={name}>
-                    <Checkbox id={name} value={name} />
+                {services_of_interest.map(({ name }, index) => (
+                  <div
+                    key={name}
+                    className={`${index === 2 ? "line-through" : ""}`}
+                  >
+                    <Checkbox
+                      id={name}
+                      name={name}
+                      onChange={handleServices}
+                      disabled={index === 2}
+                    />
                     <Label htmlFor={name}>{name}</Label>
                   </div>
                 ))}
