@@ -12,7 +12,7 @@ import {
 import { Footer, Header } from "../component/shared";
 
 export default function Home() {
-  const [country, setCountry] = useState<string | null>(null);
+  const [country, setCountry] = useState<string>("");
   const [showOverlay, setShowOverlay] = useState(false);
   const [errorMessage, setErrorMessage] = useState(false);
 
@@ -32,7 +32,6 @@ export default function Home() {
 
         setCountry(response.country);
       } catch (error: any) {
-        setCountry("");
         setErrorMessage(true);
         throw new Error(error);
       }
@@ -44,8 +43,8 @@ export default function Home() {
   useEffect(() => {
     if (searchParams.get("debug") === "true") return;
 
-    if (country?.trim().length! >= 0) {
-      if (errorMessage || country !== "PE") {
+    if (country.trim().length > 0) {
+      if (errorMessage || country.trim() !== "PE") {
         setShowOverlay(true);
       } else {
         setShowOverlay(false);
@@ -55,8 +54,14 @@ export default function Home() {
     // eslint-disable-next-line
   }, [country]);
 
+  useEffect(() => {
+    document.body.className = `${showOverlay ? "overflow" : ""}`;
+  }, [showOverlay]);
+
+  console.log(country);
+
   return (
-    <div className={`box ${showOverlay ? "overflow" : ""}`}>
+    <div className="box">
       {showOverlay && <Overlay />}
       <Header />
       <Hero />
