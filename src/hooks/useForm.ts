@@ -74,6 +74,11 @@ const useForm = (showOverlay: boolean) => {
         resetInputsForm();
       }
     } catch (error: any) {
+      Swal.fire({
+        icon: "error",
+        title: "Oopss",
+        text: "Parece que algo salió mal, vuélvelo a intentar en unos minutos.",
+      });
       throw new Error(error);
     }
   };

@@ -1,4 +1,4 @@
-import LogoGrowayWhite from "./../../assets/logo-white.png";
+import LogoGrowayWhite from "./../../assets/logo-white.svg";
 import fbIlus from "./../../assets/ic-socials-2.svg";
 import linkedinIlus from "./../../assets/ic-socials-1.svg";
 import igIlus from "./../../assets/ic-socials.svg";
