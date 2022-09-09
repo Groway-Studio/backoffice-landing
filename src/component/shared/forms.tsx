@@ -25,8 +25,7 @@ export const Input = styled.input`
   border-radius: 10px;
   border: none;
   font-size: 1rem;
-  height: 36px;
-  padding: 0.3rem 0.5rem;
+  padding: 0.64rem 0.6rem;
 `;
 
 export const Select = styled.select`
@@ -34,13 +33,11 @@ export const Select = styled.select`
   border-radius: 10px;
   border: none;
   font-size: 1rem;
-  height: 2.8rem;
-  padding: 0.3rem 0.5rem;
+  padding: 0.6rem;
 `;
 
 export const Checkbox = styled.input.attrs({ type: "checkbox" })`
   accent-color: #e5e5e5;
-
   border-radius: 4px;
   border: none;
   height: 1rem;
