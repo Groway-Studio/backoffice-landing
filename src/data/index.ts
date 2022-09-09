@@ -15,21 +15,24 @@ export const fakeCustomers: UserTestimonial[] = [
     id: 1,
     ratingStars: `${ratingStarsIcon} `.repeat(5).trim().split(" "),
     unratingStars: [],
-    comment: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    comment:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit sit amet consectetur adipisicing.",
     profilePicture: user,
   },
   {
     id: 2,
     ratingStars: `${ratingStarsIcon} `.repeat(3).trim().split(" "),
     unratingStars: `${unratingStarsIcon} `.repeat(2).trim().split(" "),
-    comment: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    comment:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit sit amet consectetur adipisicing.",
     profilePicture: user,
   },
   {
     id: 3,
     ratingStars: `${ratingStarsIcon} `.repeat(3).trim().split(" "),
     unratingStars: `${unratingStarsIcon} `.repeat(2).trim().split(" "),
-    comment: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    comment:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit sit amet consectetur adipisicing.",
     profilePicture: user,
   },
 ];
