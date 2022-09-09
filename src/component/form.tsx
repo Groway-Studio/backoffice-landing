@@ -1,4 +1,6 @@
 import { useState } from "react";
+import Swal from "sweetalert2";
+
 // import fbIlus from "./../assets/fb.svg";
 // import linkedinIlus from "./../assets/linkedin.svg";
 // import igIlus from "./../assets/instagram.svg";
@@ -80,7 +82,15 @@ export default function FormContact({ showOverlay }: Props) {
 
       const response: string = await request.text();
 
-      console.log(response);
+      const responseValidation: string[] | null = response.match(/ok/i);
+
+      if (responseValidation && responseValidation[0] === "OK") {
+        Swal.fire({
+          icon: "success",
+          title: "¡Genial!",
+          text: "Estamos felices de que formes parte de Groway Backoffice, pronto un ejecutivo de ventas lo contactará para poder gestionar su solicitud.",
+        });
+      }
     } catch (error: any) {
       throw new Error(error);
     }
