@@ -2,9 +2,19 @@
 
 .testimonials {
   @include width;
-  padding: 6rem 0;
+  padding: 6rem 1rem;
 
   &__title {
     text-align: center;
+  }
+
+  &__content {
+    padding: 2rem 0;
+    overflow-x: scroll;
+    &_list {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(3, auto);
+    }
   }
 }
