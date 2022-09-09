@@ -1,11 +1,11 @@
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 
 import LogoGroway from "./../../assets/logo-groway.svg";
 import headerBg from "./../../assets/blob-header.svg";
 import "./../../sass/shared/_header.scss";
 
 const Header = () => {
-  const loggedIn: boolean = false;
+  // const loggedIn: boolean = false;
 
   // const [checkedState, setCheckedState] = useState<boolean>(false);
 
