@@ -43,7 +43,7 @@ export default function Home() {
   useEffect(() => {
     if (searchParams.get("debug") === "true") return;
 
-    if (country.trim().length > 0) {
+    if (country.trim().length > 0 || errorMessage) {
       if (errorMessage || country.trim() !== "PE") {
         setShowOverlay(true);
       } else {
@@ -57,8 +57,6 @@ export default function Home() {
   useEffect(() => {
     document.body.className = `${showOverlay ? "overflow" : ""}`;
   }, [showOverlay]);
-
-  console.log(country);
 
   return (
     <div className="box">
