@@ -52,7 +52,7 @@ export default function Home() {
     }
 
     // eslint-disable-next-line
-  }, [country]);
+  }, [country, errorMessage]);
 
   useEffect(() => {
     document.body.className = `${showOverlay ? "overflow" : ""}`;
