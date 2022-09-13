@@ -97,6 +97,10 @@
               font-size: var(--size-4);
               line-height: 2rem;
             }
+
+            @include phone {
+              text-align: left;
+            }
           }
           p {
             font-weight: 400;
@@ -107,7 +111,7 @@
 
             @include phone {
               width: 100%;
-              text-align: center;
+              text-align: left;
             }
 
             @include tablet {

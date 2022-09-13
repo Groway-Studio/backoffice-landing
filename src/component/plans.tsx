@@ -26,7 +26,7 @@ export default function Plans() {
                 </span>
                 <span>Consultorio de negocios</span>
               </div>
-              <div className="item">
+              {/* <div className="item">
                 <span>
                   <img src={elipseWhite} alt="no" />
                 </span>
@@ -37,7 +37,7 @@ export default function Plans() {
                   <img src={elipseWhite} alt="no" />
                 </span>
                 <span>Lorem ipsum tus</span>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="price">
@@ -53,17 +53,17 @@ export default function Plans() {
               Ideal para startups que ya están realizando sus primeras ventas.
             </p>
             <div className="list">
-              <div className="item">
+              {/* <div className="item">
                 <span>
                   <img src={elipseBlack} alt="yes" />
                 </span>
                 <span>Asistente administrativo virtual</span>
-              </div>
+              </div> */}
               <div className="item">
                 <span>
                   <img src={elipseBlack} alt="yes" />
                 </span>
-                <span>Consultorio de negocios</span>
+                <span>Todos los beneficios del Plan Basic</span>
               </div>
               <div className="item">
                 <span>
@@ -89,7 +89,7 @@ export default function Plans() {
                 </span>
                 <span>Generación de balances y reportes</span>
               </div>
-              <div className="item">
+              {/* <div className="item">
                 <span>
                   <img src={elipseBlack} alt="yes" />
                 </span>
@@ -100,7 +100,7 @@ export default function Plans() {
                   <img src={elipseWhite} alt="no" />
                 </span>
                 <span>Lorem ipsum tus</span>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="price">
@@ -116,7 +116,7 @@ export default function Plans() {
               Ideal para startups <br /> en crecimiento.
             </p>
             <div className="list">
-              <div className="item">
+              {/* <div className="item">
                 <span>
                   <img src={elipseBlack} alt="yes" />
                 </span>
@@ -151,6 +151,12 @@ export default function Plans() {
                   <img src={elipseBlack} alt="yes" />
                 </span>
                 <span>Generación de balances y reportes</span>
+              </div> */}
+              <div className="item">
+                <span>
+                  <img src={elipseBlack} alt="yes" />
+                </span>
+                <span>Todos los beneficios del Plan Pro</span>
               </div>
               <div className="item">
                 <span>
@@ -170,12 +176,12 @@ export default function Plans() {
                 </span>
                 <span>Facturación electrónica</span>
               </div>
-              <div className="item">
+              {/* <div className="item">
                 <span>
                   <img src={elipseBlack} alt="yes" />
                 </span>
                 <span>Lorem ipsum tus</span>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="price">
