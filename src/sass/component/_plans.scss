@@ -87,6 +87,10 @@
       font-weight: 400;
       color: $neutral-color-1000;
 
+      &.bold {
+        font-weight: bold;
+      }
+
       @include phone {
         font-size: 0.9rem;
       }
@@ -121,7 +125,6 @@
   span {
     color: #031d44;
     font-size: $size * 3.5;
-    font-style: italic;
     font-weight: 700;
   }
 

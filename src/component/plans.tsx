@@ -63,7 +63,9 @@ export default function Plans() {
                 <span>
                   <img src={elipseBlack} alt="yes" />
                 </span>
-                <span>Todos los beneficios del Plan Basic</span>
+                <span className="bold">
+                  Todos los beneficios del Plan Basic
+                </span>
               </div>
               <div className="item">
                 <span>
@@ -156,7 +158,7 @@ export default function Plans() {
                 <span>
                   <img src={elipseBlack} alt="yes" />
                 </span>
-                <span>Todos los beneficios del Plan Pro</span>
+                <span className="bold">Todos los beneficios del Plan Pro</span>
               </div>
               <div className="item">
                 <span>
