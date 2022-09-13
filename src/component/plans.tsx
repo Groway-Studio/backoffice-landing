@@ -1,5 +1,5 @@
 import elipseBlack from "./../assets/elipse-black.svg";
-import elipseWhite from "./../assets/elipse-white.svg";
+// import elipseWhite from "./../assets/elipse-white.svg";
 import "./../sass/component/_plans.scss";
 
 export default function Plans() {
