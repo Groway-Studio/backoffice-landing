@@ -10,9 +10,14 @@
 
   img {
     width: 100%;
-    background-size: cover;
+    object-fit: cover;
+
+    @include tablet {
+      height: 23rem;
+    }
+
     @include phone {
-      object-fit: fill;
+      height: 20rem;
     }
   }
   .contentTrial {
