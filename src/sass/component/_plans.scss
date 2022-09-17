@@ -20,25 +20,24 @@
 }
 
 .pricing {
-  flex-wrap: wrap;
-  gap: 3rem 2.5rem;
+  gap: 1rem;
   justify-content: center;
   margin-top: 4.5rem;
   width: 100%;
 
-  @include phone {
-    gap: 4rem;
+  @include tablet {
+    flex-wrap: wrap;
+    gap: 3rem 2rem;
   }
 
-  @include tablet {
+  @include phone {
     gap: 4rem;
   }
 }
 
 .card {
   background: #f2f2f2;
-  width: 30%;
-  min-width: 400px;
+  width: 33.3%;
   border-radius: 10px;
   text-align: center;
   padding: 12px 24px;
@@ -46,6 +45,11 @@
   flex-direction: column;
   justify-content: space-between;
   box-sizing: border-box;
+
+  @include tablet {
+    min-width: 320px;
+  }
+
   @include phone {
     gap: 0;
     min-width: $container-phone;
@@ -82,10 +86,11 @@
     }
 
     span {
-      font-size: 1.1rem;
+      color: $neutral-color-1000;
+      font-size: 1rem;
       font-style: italic;
       font-weight: 400;
-      color: $neutral-color-1000;
+      text-align: left;
 
       &.bold {
         font-weight: bold;
