@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.16ea7a8b.css",
+    "main.css": "/static/css/main.7e3757d2.css",
     "main.js": "/static/js/main.775585f7.js",
     "static/media/ilus-hero.svg": "/static/media/ilus-hero.19ccff2df43026474ec5fc6570b8bebd.svg",
     "static/media/assistance.svg": "/static/media/assistance.fc18d5e06f207f268b9d8f3c7b52065d.svg",
@@ -16,11 +16,11 @@
     "static/media/franja-3.svg": "/static/media/franja-3.f7a2f41725e7442441b22e9a200bb224.svg",
     "static/media/blob-header.svg": "/static/media/blob-header.40bf460f070ed3d8fb2ca2ada5514803.svg",
     "static/media/elipse-black.svg": "/static/media/elipse-black.7a8629a7ada4c9648aa5a43de4f4a7e8.svg",
-    "main.16ea7a8b.css.map": "/static/css/main.16ea7a8b.css.map",
+    "main.7e3757d2.css.map": "/static/css/main.7e3757d2.css.map",
     "main.775585f7.js.map": "/static/js/main.775585f7.js.map"
   },
   "entrypoints": [
-    "static/css/main.16ea7a8b.css",
+    "static/css/main.7e3757d2.css",
     "static/js/main.775585f7.js"
   ]
 }
