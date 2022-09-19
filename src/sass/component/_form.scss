@@ -88,9 +88,11 @@
             font-size: var(--size-6);
             line-height: 50px;
             margin-bottom: 8px;
+            font-weight: 500;
 
             span {
               text-transform: uppercase;
+              font-weight: 700;
             }
 
             @include tablet {
